@@ -10,7 +10,7 @@ angular.module('starter', [
   'starter.services'
   ])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $rootScope, Auth, $state) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -20,6 +20,14 @@ angular.module('starter', [
     if(window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
+    }
+  });
+
+  $rootScope.$on('$stateChangeStart', function(event, toState) {
+    console.log('state change', toState);
+    if (toState.name != 'intro' && !Auth.getUser()) {
+      event.preventDefault();
+      $state.go('intro');
     }
   });
 })
@@ -32,6 +40,12 @@ angular.module('starter', [
       abstract: true,
       templateUrl: "templates/menu.html",
       controller: 'AppCtrl'
+    })
+
+    .state('intro', {
+      url: '/intro',
+      templateUrl: 'templates/intro.html',
+      controller: 'IntroCtrl'
     })
 
     .state('app.parties', {

@@ -1,0 +1,76 @@
+<ion-view>
+  <ion-slide-box on-slide-changed="slideChanged(index)">
+    <ion-slide>
+      <h3>Thank you for choosing the Awesome App!</h3>
+      <div id="logo">
+        <img src="http://code.ionicframework.com/assets/img/app_icon.png">
+      </div>
+      <p>
+        We've worked super hard to make you happy.
+      </p>
+      <p>
+        But if you are angry, too bad.
+      </p>
+    </ion-slide>
+    <ion-slide>
+      <h3>Using Awesome</h3>
+      
+      <div id="list">
+        <h5>Just three steps:</h5>
+        <ol>
+          <li>Be awesome</li>
+          <li>Stay awesome</li>
+          <li>There is no step 3</li>
+        </ol>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <h3>Sign in</h3>
+      <p>
+        <button class="button button-block button-light" ng-click="doLogin()">
+          <i class="icon ion-social-facebook"></i>
+          &nbsp;Login with Facebook
+        </button>
+      </p>
+    </ion-slide>
+  </ion-slide-box>
+</ion-view>
+
+<style>
+  body {
+    cursor: url('http://ionicframework.com/img/finger.png'), auto;
+  }
+
+  .slider {
+    height: 100%;
+  }
+  .slider-slide {
+    padding-top: 80px;
+    color: #000;
+    background-color: #C3E1FF;
+    text-align: center;
+
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+  }
+
+
+
+  #logo {
+    margin: 30px 0px;
+  }
+
+  #list {
+    width: 170px;
+    margin: 30px auto;
+    font-size: 20px;
+  }
+  #list ol {
+    margin-top: 30px;
+  }
+  #list ol li {
+    text-align: left;
+    list-style: decimal;
+    margin: 10px 0px;
+  }
+</style>
