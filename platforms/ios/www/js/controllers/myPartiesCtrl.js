@@ -1,11 +1,19 @@
 angular.module('starter.controllers')
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+.controller('MyPartiesController', function($scope, Party, Auth) {
+  $scope.title = 'My Parties';
+  $scope.user = Auth.getUser();
+
+  $scope.doRefresh = function() {
+    Party.getUserParties(Auth.getUser().id).success(function(data) {
+      console.log('user parties ', data);
+      $scope.parties = data.user.parties;
+    }).finally(function() {
+      $scope.$broadcast('scroll.refreshComplete');
+    });
+  };
+
+  Party.getUserParties(Auth.getUser().id).success(function(data) {
+    console.log('user parties ', data);
+    $scope.parties = data.user.parties;
+  });
 });

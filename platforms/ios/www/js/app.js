@@ -53,7 +53,17 @@ angular.module('starter', [
       views: {
         'menuContent' :{
           templateUrl: "templates/parties.html",
-          controller: 'PlaylistsCtrl'
+          controller: 'MyPartiesController'
+        }
+      }
+    })
+
+    .state('app.party', {
+      url: '/parties/:partyId',
+      views: {
+        'menuContent' :{
+          templateUrl: 'templates/party.html',
+          controller: 'PartyController'
         }
       }
     });
