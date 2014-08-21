@@ -12,6 +12,8 @@ function NearPartiesController(scope, Party) {
       Party.getParties(pos.coords).success(function(data) {
         console.log('near parties ', data);
         scope.parties = data;
+      }).finally(function() {
+        scope.$broadcast('scroll.refreshComplete');
       });
     }, function(error) {  
       console.log('geolocation error', error);
