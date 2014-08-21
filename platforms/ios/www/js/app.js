@@ -58,6 +58,18 @@ angular.module('starter', [
       }
     })
 
+    .state('app.partiesNear', {
+      url: '/parties/near',
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/nearParties.html",
+          parent: 'app.parties',
+          controller: 'NearPartiesController',
+          controllerAs: 'near'
+        }
+      }
+    })
+
     .state('app.party', {
       url: '/parties/:partyId',
       views: {
