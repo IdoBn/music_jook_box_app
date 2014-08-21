@@ -1,5 +1,5 @@
 angular.module('starter.controllers')
-.controller('PartyController', ['$scope', '$stateParams', 'Party', 'Auth', '$ionicPopup',function($scope, $stateParams, Party, Auth, $ionicPopup){
+.controller('PartyController', ['$scope', '$stateParams', 'Party', 'Auth', '$ionicPopup', '$state', function($scope, $stateParams, Party, Auth, $ionicPopup, $state){
   $scope.id = $stateParams.partyId;
   $scope.currentUser = Auth.getUser()
   Party.getParty($scope.id).success(function(data) {

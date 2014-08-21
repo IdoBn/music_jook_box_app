@@ -5,7 +5,7 @@
 */
 angular.module('starter.services')
 .factory('Party', ['$http', 'Auth', function($http, Auth){
-  var URL = 'http://192.168.10.181:3000';
+  var URL = 'http://localhost:3000';
 
   function load(path) {
     return $http.get(URL + '/' + path);

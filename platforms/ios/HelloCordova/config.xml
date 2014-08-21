@@ -31,6 +31,9 @@
     <feature name="CordovaFacebook">
         <param name="ios-package" value="CordovaFacebook" />
     </feature>
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
     <name>HelloCordova</name>
     <description>
         An Ionic Framework and Cordova project.

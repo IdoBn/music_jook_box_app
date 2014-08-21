@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		005F8CAF196D24A5001A96D6 /* CordovaFacebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 005F8CAE196D24A5001A96D6 /* CordovaFacebook.m */; };
 		00AB644F196AC06200487361 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AB644E196AC06200487361 /* FacebookSDK.framework */; };
@@ -45,6 +44,7 @@
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		85BCD4EA637C4E9A9C524285 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = A28679C273264A1B93D09B4A /* IonicKeyboard.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		95AA97A51E5B4580B9EA2AAD /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2693A7D1FEBF4F30973B7211 /* CDVLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +120,8 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HelloCordova/config.xml; sourceTree = "<group>"; };
+		2693A7D1FEBF4F30973B7211 /* CDVLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocation.m"; path = "org.apache.cordova.geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		BC6B53C2074A4572B6125D4B /* CDVLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocation.h"; path = "org.apache.cordova.geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,8 @@
 				22A859D7CE1745C58D7E978C /* CDVLogger.h */,
 				718D4E9BC7FB4EBFAA57563F /* CDVDevice.m */,
 				C948CE50750E4D09B5392617 /* CDVDevice.h */,
+				2693A7D1FEBF4F30973B7211 /* CDVLocation.m */,
+				BC6B53C2074A4572B6125D4B /* CDVLocation.h */,
 			);
 			name = Plugins;
 			path = HelloCordova/Plugins;
@@ -451,6 +455,7 @@
 				14CB1776F45946F2AC2DB510 /* UIWebViewExtension.m in Sources */,
 				376F63778392488AAD7CC9FD /* CDVLogger.m in Sources */,
 				76E11414DD664C389FE1AABF /* CDVDevice.m in Sources */,
+				95AA97A51E5B4580B9EA2AAD /* CDVLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +537,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)/libCordova.a\"",
 					"-ObjC",
 				);
-				PRODUCT_NAME = HelloCordova;
+				PRODUCT_NAME = "HelloCordova";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -567,7 +572,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)/libCordova.a\"",
 					"-ObjC",
 				);
-				PRODUCT_NAME = HelloCordova;
+				PRODUCT_NAME = "HelloCordova";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

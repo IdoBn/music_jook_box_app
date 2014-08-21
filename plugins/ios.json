@@ -23,6 +23,20 @@
                         {
                             "xml": "<feature name=\"CordovaFacebook\"><param name=\"ios-package\" value=\"CordovaFacebook\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "framework": {
+                "parents": {
+                    "CoreLocation.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
                         }
                     ]
                 }
@@ -40,6 +54,9 @@
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
         "com.ccsoft.plugin.CordovaFacebook": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "org.apache.cordova.geolocation": {
             "PACKAGE_NAME": "com.ionicframework.starter"
         }
     },

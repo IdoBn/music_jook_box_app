@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D4705FFE-49C3-4B7A-932C-440D6D502DAB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JookBox</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>76877B56-1206-466A-B336-5747E1AD667D</key>
+		<string>ssh://github.com/IdoBn/music_jook_box_app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/JookBox.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>76877B56-1206-466A-B336-5747E1AD667D</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/IdoBn/music_jook_box_app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>76877B56-1206-466A-B336-5747E1AD667D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>76877B56-1206-466A-B336-5747E1AD667D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>music_app_2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

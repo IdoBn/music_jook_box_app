@@ -1,7 +1,7 @@
 angular.module('starter.services', []).
   factory('Auth', function($http, localStore){
     var currentUser = localStore.get('user');
-    var URL = 'http://192.168.10.181:3000';
+    var URL = 'http://localhost:3000';
     return {
       login: function(params) {
         return $http({

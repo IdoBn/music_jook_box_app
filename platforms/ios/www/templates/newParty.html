@@ -1,0 +1,17 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">New Party</h1>
+    <div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="padding">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input ng-model="party.name" type="text">
+        </label>
+        <button class="button button-full button-positive" ng-click="createParty(party)">Create</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>
