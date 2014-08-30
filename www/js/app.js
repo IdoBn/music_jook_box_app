@@ -49,7 +49,7 @@ angular.module('starter', [
     })
 
     .state('app.parties', {
-      url: "/parties/me",
+      url: "/parties",
       views: {
         'menuContent' :{
           templateUrl: "templates/parties.html",
@@ -59,13 +59,11 @@ angular.module('starter', [
     })
 
     .state('app.partiesNear', {
-      url: '/parties/near',
+      url: '/partiesNear',
       views: {
-        'menuContent' :{
+        'menuContent': {
           templateUrl: "templates/nearParties.html",
-          parent: 'app.parties',
-          controller: 'NearPartiesController',
-          controllerAs: 'near'
+          controller: 'NearPartiesController'                        
         }
       }
     })
@@ -80,6 +78,6 @@ angular.module('starter', [
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/parties/me');
+  $urlRouterProvider.otherwise('/app/parties');
 });
 
